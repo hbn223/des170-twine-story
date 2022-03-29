@@ -108,6 +108,10 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 }
 
 @font-face {
+    font-family: 'Neutraface Text Light';
+    src: url("fonts/NeutrafaceText-Light.woff2");
+}
+@font-face {
     font-family: 'Neutraface Text Demi';
     src: url("fonts/NeutrafaceText-Demi.woff2");
 }
@@ -116,17 +120,20 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
     src: url("fonts/NeutrafaceText-Bold.woff2");
 }
 
+body.home {
+  background-image: url("img/start-screen.jpg");
+  background-size: cover;
+}
+
 body.mia {
-  background-image: url("https://i.imgur.com/klbhx6z.png");
+  background-image: url("img/mia.png");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'yasashiiw01-boldregular';
 }
 
-
-
 body.seb {
-  background-image: url("https://i.imgur.com/1Lh9eUc.png");
+  background-image: url("img/seb.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -137,8 +144,8 @@ body.seb {
 }
 
 .h2 {
- 	font-family: 'Neutraface Text Demi';
-  font-size: 40px;
+  font-family: 'Neutraface Text Demi';
+  font-size: 30px;
 }
 
 
@@ -153,7 +160,7 @@ Setting.addToggle("audioEnabled", {
 	default	 : true,
 	onInit	 : audioEnabledHandler,
 	onChange : audioEnabledHandler
-});</script><tw-tag name="mia" color="orange"></tw-tag>,<tw-tag name="seb" color="purple"></tw-tag><tw-passagedata pid="1" name="Home" tags="home" position="503.33333333333337,89.33333333333334" size="100,100">&lt;&lt;if settings.audioEnabled&gt;&gt;&lt;&lt;audio king-bird play&gt;&gt;&lt;&lt;/if&gt;&gt;
+});</script><tw-tag name="mia" color="orange"></tw-tag>,<tw-tag name="seb" color="purple"></tw-tag><tw-passagedata pid="1" name="Home" tags="home" position="504.33333333333337,88.33333333333334" size="100,100">&lt;&lt;if settings.audioEnabled&gt;&gt;&lt;&lt;audio king-bird play&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 
 @@.h1;
