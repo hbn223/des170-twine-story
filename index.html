@@ -225,13 +225,22 @@ body.season .seasontxt {
   color: #FAFAFA;
   text-shadow: 0.2px 0.2px 50px #000000;
   position: absolute;
-  margin: 150px 0 0 125px;
   z-index: 1;
 }
+
 body.season img {
   position: fixed;
   margin: 0 -95px;
-
+}
+body.winter .seasontxt {
+   margin: 150px 0 0 125px;
+}
+body.spring img {
+  position: fixed;
+  margin: 0 -55px;
+}
+body.spring .seasontxt {
+   margin: 150px 0 0 180px;
 }
 
 
@@ -748,10 +757,14 @@ You angrily storm out of the restaurant, passing by [[the girl who just walked i
 &lt;img src=&quot;gif/winter.gif&quot; height=&quot;600&quot; width=&quot;1066&quot;
 alt=&quot;An animated gif of a dog&quot; /&gt;
 @@
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="MSpring" tags="mia season" position="375,675" size="100,100">&lt;&lt;timed 4s&gt;&gt;&lt;&lt;goto &quot;Mia 09&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="MSpring" tags="mia season spring" position="375,675" size="100,100">&lt;&lt;timed 55s&gt;&gt;&lt;&lt;goto &quot;Mia 09&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;nobr&gt;&gt;
+@@.seasontxt;
+SPRING
+
+@@
 @@.gif;
-&lt;img src=&quot;gif/spring.gif&quot; height=&quot;600&quot; width=&quot;1066&quot;
+&lt;img src=&quot;gif/spring-1.gif&quot; height=&quot;600&quot;
 alt=&quot;Sebastian I Ran scene&quot; /&gt;
 @@
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="MFall" tags="mia season" position="675,700" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="MSummer" tags="mia season" position="525,650" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="29" name="Seb 05" tags="seb" position="1075,800" size="100,100">@@.p1;
