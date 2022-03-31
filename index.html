@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.3.16" ifid="EAC236D6-F372-45CF-A771-554646825F3C" zoom="0.6" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+	<tw-storydata name="index" startnode="1" creator="Twine" creator-version="2.3.16" ifid="EAC236D6-F372-45CF-A771-554646825F3C" zoom="0.25" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -354,10 +354,7 @@ Setting.addToggle("audioEnabled", {
 	default	 : true,
 	onInit	 : audioEnabledHandler,
 	onChange : audioEnabledHandler
-});</script><tw-tag name="mia" color="orange"></tw-tag>,<tw-tag name="season" color="gray"></tw-tag>,<tw-tag name="seb" color="purple"></tw-tag><tw-passagedata pid="1" name="Home" tags="home" position="875,200" size="100,100">&lt;&lt;if settings.audioEnabled&gt;&gt;&lt;&lt;audio king-bird play&gt;&gt;&lt;&lt;/if&gt;&gt;
-
-
-@@.h1;
+});</script><tw-tag name="mia" color="orange"></tw-tag>,<tw-tag name="season" color="gray"></tw-tag>,<tw-tag name="seb" color="purple"></tw-tag><tw-passagedata pid="1" name="Home" tags="home" position="875,200" size="100,100">@@.h1;
 LA LA LAND
 @@
 
@@ -447,8 +444,9 @@ SETTINGS
 
 
 
-</tw-passagedata><tw-passagedata pid="6" name="StoryInit" tags="" position="425,200" size="100,100">&lt;&lt;cacheaudio &quot;testpattern&quot; &quot;media/testpattern.ogg&quot; &quot;media/testpattern.wav&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;king-bird&quot; &quot;media/king-bird.mp3&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="6" name="StoryInit" tags="" position="425,200" size="100,100">&lt;&lt;cacheaudio &quot;jazzclub&quot; &quot;audio/jazz.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;cafe&quot; &quot;audio/cafe.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;piano&quot; &quot;audio/piano.mp3&quot;&gt;&gt;
 
 &lt;&lt;script&gt;&gt;
 
@@ -457,7 +455,10 @@ SETTINGS
 Config.debug = false; //turn off debug mode, like what is it for?
 Config.ui.stowBarInitially = true;//do this, like what is it for?
 
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Scripts" tags="script" position="425,75" size="100,100">//requires jquery</tw-passagedata><tw-passagedata pid="8" name="Mia 02" tags="mia m1" position="325,900" size="100,100">@@.p2;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Scripts" tags="script" position="425,75" size="100,100">//requires jquery</tw-passagedata><tw-passagedata pid="8" name="Mia 02" tags="mia m1" position="325,900" size="100,100">&lt;&lt;cacheaudio &quot;cafe&quot; &quot;audio/cafe.mp3&quot;&gt;&gt;
+&lt;&lt;audio &quot;cafe&quot; play&gt;&gt;
+
+@@.p2;
 //[coffee shop]//
 @@
 &lt;&lt;timed 1.5s&gt;&gt;
@@ -481,7 +482,8 @@ As you run out the coffee shop doors a hipster-looking regular spills his cappuc
 &lt;&lt;/timed&gt;&gt;
 @@#next;
 [[➤|Mia 03]]
-@@</tw-passagedata><tw-passagedata pid="9" name="Mia 03" tags="mia m1" position="325,1050" size="100,100">@@.p2;
+@@</tw-passagedata><tw-passagedata pid="9" name="Mia 03" tags="mia m1" position="325,1050" size="100,100">&lt;&lt;audio &quot;cafe&quot; stop&gt;&gt;
+@@.p2;
 //[the audition]//
 @@
 &lt;&lt;timed 1.5s&gt;&gt;
@@ -573,7 +575,10 @@ It’s late as you walk to your car alone. All of your roommates went home with 
 &lt;&lt;/timed&gt;&gt;
 @@#next;
 [[➤|Mia 08]]
-@@</tw-passagedata><tw-passagedata pid="14" name="Mia 08" tags="mia m1" position="325,1800" size="100,100">@@.p1;
+@@</tw-passagedata><tw-passagedata pid="14" name="Mia 08" tags="mia m1" position="323.33333333333337,1800" size="100,100">&lt;&lt;cacheaudio &quot;piano&quot; &quot;audio/piano.mp3&quot;&gt;&gt;
+&lt;&lt;audio &quot;piano&quot; play&gt;&gt;
+
+@@.p1;
 &lt;&lt;type 2ms&gt;&gt;\
 You stumble into a restaurant you see when you hear a beautiful, quiet song being played on the piano.
 \&lt;&lt;/type&gt;&gt;
@@ -849,7 +854,8 @@ SPRING
 &lt;img src=&quot;gif/spring-2.gif&quot; height=&quot;600&quot;
 alt=&quot;Sebastian Spring gif&quot; /&gt;
 @@
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="MSpring" tags="mia season spring" position="475,675" size="100,100">&lt;&lt;timed 5s&gt;&gt;&lt;&lt;goto &quot;Mia 09&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="MSpring" tags="mia season spring" position="475,675" size="100,100">&lt;&lt;audio &quot;piano&quot; stop&gt;&gt;
+&lt;&lt;timed 5s&gt;&gt;&lt;&lt;goto &quot;Mia 09&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;nobr&gt;&gt;
 @@.seasontxt;
 SPRING
@@ -1626,7 +1632,8 @@ You burst into laughter.
 \&lt;&lt;/type&gt;&gt;@@
 @@#next;
 [[➤|Mia 21]]
-@@</tw-passagedata><tw-passagedata pid="40" name="Mia 21" tags="mia sp" position="475,2625" size="100,100">@@.p0;&lt;&lt;type 30ms&gt;&gt;SEBASTIAN (CONT’D)\&lt;&lt;/type&gt;&gt;@@
+@@</tw-passagedata><tw-passagedata pid="40" name="Mia 21" tags="mia sp" position="475,2625" size="100,100">&lt;&lt;audio &quot;jazzclub&quot; play&gt;&gt;
+@@.p0;&lt;&lt;type 30ms&gt;&gt;SEBASTIAN (CONT’D)\&lt;&lt;/type&gt;&gt;@@
 @@.p1;
 &lt;&lt;type 30ms&gt;&gt;\It’s not cocktail music -- it’s a highwire act. These guys are performing and composing and rearranging all at once. 
 \&lt;&lt;/type&gt;&gt;@@
@@ -1754,7 +1761,8 @@ You laugh. But Sebastian can tell something in your laugh...
 \&lt;&lt;/type&gt;&gt;@@
 @@#next;
 [[➤|Mia 23]]
-@@</tw-passagedata><tw-passagedata pid="42" name="Mia 23" tags="mia sp" position="475,2925" size="100,100">@@.p2;
+@@
+&lt;&lt;audio &quot;jazzclub&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Mia 23" tags="mia sp" position="475,2925" size="100,100">@@.p2;
 //[callback audition]//
 @@
 &lt;&lt;timed 1.5s&gt;&gt;
