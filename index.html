@@ -354,7 +354,7 @@ Setting.addToggle("audioEnabled", {
 	default	 : true,
 	onInit	 : audioEnabledHandler,
 	onChange : audioEnabledHandler
-});</script><tw-tag name="mia" color="orange"></tw-tag>,<tw-tag name="seb" color="purple"></tw-tag>,<tw-tag name="season" color="gray"></tw-tag><tw-passagedata pid="1" name="Home" tags="home" position="875,200" size="100,100">&lt;&lt;if settings.audioEnabled&gt;&gt;&lt;&lt;audio king-bird play&gt;&gt;&lt;&lt;/if&gt;&gt;
+});</script><tw-tag name="mia" color="orange"></tw-tag>,<tw-tag name="season" color="gray"></tw-tag>,<tw-tag name="seb" color="purple"></tw-tag><tw-passagedata pid="1" name="Home" tags="home" position="875,200" size="100,100">&lt;&lt;if settings.audioEnabled&gt;&gt;&lt;&lt;audio king-bird play&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 
 @@.h1;
@@ -376,16 +376,7 @@ Select your character
 @@.p1;
 [[Return|Home]]
 @@
-
-@@.p1;
-[[DEBUG SP|Mia F01]]
-@@
-@@.p1;
-[[DEBUG SM|Mia 28]]
-@@
-@@.p1;
-[[DEBUG FL|SSpring]]
-@@</tw-passagedata><tw-passagedata pid="3" name="Mia 01" tags="mia m1" position="325,750" size="100,100">@@.p2;
+</tw-passagedata><tw-passagedata pid="3" name="Mia 01" tags="mia m1" position="325,750" size="100,100">@@.p2;
 //[Scene begins in car]//
 @@
 &lt;&lt;timed 1.5s&gt;&gt;
@@ -626,13 +617,7 @@ You’re listening to Thelonius Monk’s “Japanese Folk Song,” repeatedly re
 [[➤|Seb 02]]
 @@
 
-</tw-passagedata><tw-passagedata pid="16" name="audio conrol code" tags="" position="625,175" size="100,100">&lt;&lt;link &quot;Music: &quot;&gt;&gt;
-&lt;&lt;audio &quot;test&quot; play&gt;&gt;
-&lt;&lt;/link&gt;&gt;
-
-
-
-&lt;button id=&quot;on&quot; onclick=&quot;toggleMusicOff()&quot;&gt;Music On
+</tw-passagedata><tw-passagedata pid="16" name="audio conrol code" tags="" position="625,175" size="100,100">&lt;button id=&quot;on&quot; onclick=&quot;toggleMusicOff()&quot;&gt;Music On
 &lt;&lt;masteraudio stop&gt;&gt;
 &lt;/button&gt;
 
@@ -656,7 +641,7 @@ function toggleMusicOff() {
 &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
 
 [[Return|Home]]
-</tw-passagedata><tw-passagedata pid="17" name="Mia 09" tags="mia sp" position="475,825" size="100,100">@@.p2;
+</tw-passagedata><tw-passagedata pid="17" name="Mia 09" tags="mia sp" position="476.66666666666663,826.6666666666667" size="100,100">@@.p2;
 //[backyard party, corny 80&#39;s music plays]//
 @@
 &lt;&lt;timed 1.5s&gt;&gt;
@@ -884,7 +869,7 @@ FALL
 &lt;img src=&quot;gif/fall-1.gif&quot; height=&quot;600&quot;
 alt=&quot;Fall Mia gif&quot; /&gt;
 @@
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="MSummer" tags="mia season summer" position="625,650" size="100,100">&lt;&lt;timed 55s&gt;&gt;&lt;&lt;goto &quot;Mia 28&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="MSummer" tags="mia season summer" position="625,650" size="100,100">&lt;&lt;timed 5s&gt;&gt;&lt;&lt;goto &quot;Mia 28&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;nobr&gt;&gt;
 @@.seasontxt;
 SUMMER
@@ -1593,7 +1578,9 @@ Sebastian sits back down. Wants to end the conversation. \&lt;&lt;/type&gt;&gt;@
 &lt;&lt;type 30ms&gt;&gt;\Do you need to be anywhere right now? 
 \&lt;&lt;/type&gt;&gt;@@
 
-[Cut to an almost empty old-school jazz club]
+@@.p2;
+//[Cut to an almost empty old-school jazz club]//
+@@
 
 @@.p0;&lt;&lt;type 30ms&gt;&gt;SEBASTIAN (CONT’D)\&lt;&lt;/type&gt;&gt;@@
 @@.p1;
